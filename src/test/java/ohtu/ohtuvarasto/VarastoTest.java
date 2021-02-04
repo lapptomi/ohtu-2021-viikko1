@@ -135,4 +135,9 @@ public class VarastoTest {
         varasto2 = new Varasto(tilavuus, saldo);
         assertEquals("saldo = " + varasto2.getSaldo() + ", vielä tilaa " + varasto2.paljonkoMahtuu(), varasto2.toString());
     }
+
+    @Test
+    public void virheellinenTesti() {
+        assertEquals(0, 10);
+    }
 }
